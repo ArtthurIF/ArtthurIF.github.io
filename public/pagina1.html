@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>Página de Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="Estilo1.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Esse link é para acessar os icons (imagens de usuario ou de cadeado do formulário  -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Inclui um link para o bootstrap-->
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+            <div class="box">
+          <div class="container">
+             <div class="top-header">
+                <span>Já tem uma conta?</span>
+                  <header>Login</header>
+             </div>
+              <!-- Aqui colocamos um textinho na pagina para perguntar ao usuario se ele tem uma conta e a palavra login do site-->
+               <div class="input-field">
+                  <input type="text" class="input" placeholder="Nome de usuário" required>  
+                  <i class="bx bx-user"></i>             
+             </div>
+   
+             <!-- Aqui estamos criando o fomulário para o usuário com um icon de usuário -->
+             
+                <div class="input-field">
+                  <input type="password" class="input" placeholder="Senha" required>
+                   <i class="bx bx-lock-alt"></i>          
+             </div>
+             <!-- Aqui estamos criando o fomulário para a senha do usuário com um icon de cadeado  -->
+             
+                <div class="input-field">
+                  <input type="submit" class="submit" value="Login" id="loginButton">               
+             </div>
+                   <script>
+    document.getElementById("loginButton").addEventListener("click", function() {
+        window.location.href = "pagina2.html";
+    });
+</script>
+
+ <!-- Colocamos um botão de login e assim que você clicar nele ele é direcionado para a pagina2.html, usqamos html e javascript -->
+ 
+                    <div class="buttom">
+                      <div class="left">
+                        <input type="checkbox" id="check">
+                        <label for="check">Me lembre a minha senha</label>
+                    </div>
+                    <!-- Criamos o fomulário para o usuário com um quadradinho que "ajuda a entrar mais facilmente" para lembrar a senha  -->
+                       <div class="right">
+                          <label><a href="#">Esqueci a senha?</a></label>
+                   </div><!-- Aqui estamos criando o fomulário para o usuário recuperar a senha, caso tenha esquecido a mesma -->
+               </div>
+          </div>
+       </div>
+</body>
+</html>

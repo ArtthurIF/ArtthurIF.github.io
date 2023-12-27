@@ -1,0 +1,141 @@
+{
+   font-family: 'Poppins', sans serif;
+   /* Estamos definindo (font-family) a ser usada para o texto.
+   Neste caso, a fonte 'Poppins' é preferencial, seguida de uma fonte genérica 'sans-serif'
+   caso 'Poppins' não esteja disponível. */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+	background-image: url("Login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* Aqui estamos colocando a imagem de fundo e centralizando a mesma */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100%; /* Adicione esta linha para ocupar toda a largura */
+}
+
+.container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+  margin: auto; /* Adicione esta linha */
+}
+
+span {
+	color: #fff;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+	/* Estamos estilizando elementos <span>, definindo cor, tamanho da fonte e alinhando-os ao centro. */
+}
+
+header {
+	color: #fff;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+	/* Estamos estilizando elementos <header>, definindo cor, tamanho da fonte e alinhando-os ao centro. */
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+	/* Estamos estilizando elementos com a classe .input-field, usando flexbox para empilhar elementos verticalmente. */
+}
+
+.input {
+	height: 45px;
+	width: 150%;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	color: #fff;
+	padding: 0 0 0 42px;
+	background: rgba(255,255,255,0.1);
+	/* Estamos estilizando elementos de entrada (input) com algumas propriedades, como altura, largura, cores e preenchimento. */
+}
+
+i {
+	position: relative;
+	top: -31px;
+	left: 17px;
+	color: #fff;
+	/* Estamos estilizando elementos <i> (ícones) para posicioná-los em relação ao elemento pai. */
+}
+::-webkit-input-placeholder {
+	color: #fff;
+	/* Estamos estilizando o texto de espaço reservado (placeholder) para os elementos <input> em navegadores WebKit (como o Chrome). */
+}
+
+.submit {
+	border: none;
+	border-radius: 30px;
+	font-size: 15px;
+	height: 45px;
+	outline: none;
+	width: 150%;
+	background: rgba(255,255,255,0.7);
+	cursor: pointer;
+	transition: .3s;
+	
+}
+
+.submit:hover {
+	box-shadow: 1px 5px 7 1px rgba(0, 0, 0, 0.2);
+	/* Estamos estilizando elementos com a classe .submit (botões), definindo cores, tamanhos, transições e sombreamento ao passar o mouse sobre eles. */
+}
+.buttom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: small;
+	color: #fff;
+	margin-top: 20px;
+	width: 150%;
+	
+	/* Estamos estilizando elementos com a classe .buttom, organizando-os em uma linha, definindo o tamanho da fonte e cor do texto. */
+}
+.buttom > * {
+  margin: 0; /* Removendo as margens padrão */
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin-right: 10px; /* Adicionei margem à direita no elemento .left */
+}
+
+.right {
+   margin-left: 20px; /* Adicionei margem à esquerda no elemento .right */
+}
+
+label a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+

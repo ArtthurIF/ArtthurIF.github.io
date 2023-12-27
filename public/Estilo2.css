@@ -1,0 +1,87 @@
+:root{
+	--DarkTurquoise:#00CED1; /*Definindo a variavel roza que vai mudar a cor dos elementos como nome inicio e simbolos para roxo assim que passar o mouse por cima*/
+}
+
+*{ /* Estilos aplicados a todos os elementos HTML */
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: .2s linear;/* Transições suaves para animações de elementos */
+}
+
+html{/* Estilos aplicados ao elemento HTML */
+	font-size: 62.5%; /* Define o tamanho da fonte base em 62.5% do tamanho padrão. */
+	scroll-behavior: smooth; /* Adiciona uma rolagem suave à página */
+	scroll-padding-top: 6rem; /* Define um espaço de rolagem suave no topo da página */
+	overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+.logo img { /* Estilos para a classe "logo" dentro de um elemento com a classe "img" */
+	float: left; /* Imagem flutua à esquerda */
+	width: 180px;
+	height: auto; /* Mantém a proporção da altura automaticamente */
+	
+}
+/* Estilos para a classe "imagemfundo" */
+.imagemfundo {
+    width: 100vw;
+    height: 100vh;
+    background-size: contain; /* Alterado de 'cover' para 'contain' */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    position: fixed;
+    z-index: -1;
+    transform: scale(1.0);
+}
+/* Estilos para o cabeçalho (elemento "header") */
+header  {
+	position: inherit;
+	lefth: 0;
+	right: 0;
+	background: #EEE8AA;
+	padding: 7rem 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); /* Adiciona uma sombra ao cabeçalho */
+}
+.top-img {/* Estilos para a classe "top-img" */
+    position: absolute; 
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 1; /* Coloca esta imagem acima de outros elementos */
+}
+
+header .navbar a{/* Estilos para links na barra de navegação */
+	font-size: 2rem;
+	padding: 0 1.5rem;
+	color: #DAA520;
+}
+
+header .navbar a:hover { /* Muda a cor do texto ao passar o mouse para a variável '--purple' definida anteriormente */
+	color: var(--DarkTurquoise);
+}
+
+header .icons a{/* Estilos para ícones com links */
+	font-size: 2.5rem;
+	color: #DAA520;
+	margin-left: 1.5rem;
+}
+
+header .icons a:hover { /* Muda a cor do ícone ao passar o mouse para a variável '--purple' */
+	color:var(--DarkTurquoise);
+}
+
+
+
+
+

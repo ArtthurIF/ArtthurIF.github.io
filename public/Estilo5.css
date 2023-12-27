@@ -1,0 +1,70 @@
+body {
+            font-family: Arial, sans-serif;
+            background-image: url('faleconosco.jpg'); /* Define uma imagem de fundo */
+            background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+            background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+            margin: 0;  /* Remove margens padrão do corpo */
+            padding: 0; /* Remove preenchimentos padrão do corpo */
+        }
+        
+        h2{
+           font-family: Garamond;
+           text-align: center;
+        }
+
+        #form-container {/* Estilos para o contêiner do formulário */
+            width: 300px;
+            margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+        }
+
+        label, input, select, textarea {/* Estilos para rótulos, campos de entrada, selects e áreas de texto */
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .horizontal-group {/* Estilos para grupos horizontais (por exemplo, para botões de rádio) */
+            display: flex;/* Organiza os elementos horizontalmente */
+        }
+
+        .horizontal-group label {/* Estilos para rótulos dentro de grupos horizontais */
+            flex: 1;/* Faz com que os rótulos dentro do grupo ocupem espaço igual */
+            margin-right: 10px;/* Adiciona um espaço à direita entre os rótulos */
+        }
+
+        button {/* Estilos para botões */
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {/* Estilos quando o cursor paira sobre o botão */
+            background-color: #0056b3;
+        }
+
+        #confirmation-message {/* Estilos para a mensagem de confirmação (inicialmente oculta) */
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .botao-voltar {/* Estilos para o botão de voltar */
+            position: fixed;/* Fixa o botão na posição */
+            top: 10px;/* Define a distância superior de 10 pixels a partir do topo */
+            left: 10px; /* Define a distância à esquerda de 10 pixels */
+            background-color: #0074d9;/* Define a cor de fundo do botão como azul (#0074d9) */
+            color: white;/* Define a cor do texto no botão como branco */
+            padding: 10px;/* Define o preenchimento do botão */
+            border: none; /* Remove a borda do botão */
+            border-radius: 50%;/* Adiciona um arredondamento para tornar o botão circular */
+            cursor: pointer;/* Altera o cursor do mouse para o estilo "mão" quando passa sobre o botão */
+            z-index: 999;/* Controla a camada de sobreposição do botão (acima de outros elementos) */
+        }

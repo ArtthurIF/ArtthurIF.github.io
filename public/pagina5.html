@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fale conosco</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<!-- Inclui um link para uma folha de estilo do Font Awesome -->
+ <link rel="stylesheet" href="Estilo5.css">
+ <!-- Inclui um link para uma folha de estilo chamada "Estilo5.css" -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <!-- Inclui um link para o bootstrap-->
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Contêiner do formulário -->
+      <div id="form-container">
+        <h2>Fale Conosco</h2>
+        <form id="movie-evaluation-form">
+        <!-- Campos do formulário -->
+            <label for="movie-title">Nome Completo:</label>
+            <input type="text" id="movie-title" required>
+
+            <label for="movie-year">Endereço de E-mail:</label>
+            <input type="number" id="movie-year" required>
+
+            <label for="movie-description">Preferência de Contato:</label>
+            <textarea id="movie-description" rows="4" required></textarea>
+
+            <label for="suggestion-reason">Motivo</label>
+            <textarea id="suggestion-reason" rows="2" required></textarea>
+            
+             <!-- Botões do formulário para enviar a sugestão e limpar os campos -->
+            <button type="button" onclick="submitEvaluation()">Enviar</button>
+            <button type="button" onclick="resetForm()">Limpar Formulário</button>
+        </form>
+        <p id="confirmation-message">Sua mensagem foi enviada, aguarde entraremos em contato!</p>
+    </div>
+    <!-- Um botão para voltar para a página anterior (pagina2.html) -->
+           <a href="pagina2.html" class="botao-voltar">
+        <i class="fa fa-arrow-left"></i> <!-- icon de seta para a esquerda do Font Awesome-->
+    </a>
+    <script>
+ // Função para mostrar uma mensagem de confirmação após o envio do formulário
+        function submitEvaluation() {
+            document.getElementById("confirmation-message").style.display = "block";
+        }
+        // Função para limpar o formulário e ocultar a mensagem de confirmação
+        function resetForm() {
+            document.getElementById("movie-evaluation-form").reset();
+            document.getElementById("confirmation-message").style.display = "none";
+        }
+     // Evento de clique para voltar para a página anterior quando o botão "botao-voltar" é clicado
+        document.getElementById('voltar').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

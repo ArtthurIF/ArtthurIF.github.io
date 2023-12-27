@@ -1,0 +1,79 @@
+body {
+            font-family: Arial, sans-serif;
+            background-image: url('faleconosco.jpg'); /* Define uma imagem de fundo */
+            background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+            background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+        }
+        
+        h2{
+           font-family: Garamond;
+           text-align: center;
+        }
+/* Estilos para o contêiner do formulário */
+        #form-container {
+            width: 300px;
+            margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+        }
+/* Estilos para rótulos, campos de entrada, selects e áreas de texto */
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px 0;
+            width: 150%;
+            padding: 10px;
+        }
+        
+/* Estilos para grupos horizontais (por exemplo, para botões que ficaram na horizontal dando opção de marcar feminino, masculino e outro) */
+        .horizontal-group {
+            display: flex; /* Organiza os elementos horizontalmente */
+        }
+/* Estilos para rótulos dentro de grupos horizontais */
+        .horizontal-group label {
+            flex: 1; /* Faz com que os rótulos dentro do grupo ocupem espaço igual */
+            margin-right: 10px; /* Adiciona um espaço à direita entre os rótulos */
+        }
+
+        button {/* Estilos para botões */
+            background-color: #007BFF;
+            color: white;
+             margin-top: 10px;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+        }
+        
+        /* Adiciona uma margem entre os botões */
+        button + button {
+        margin-left: 0px; /* Ajuste conforme necessário */
+        margin-top: 10px; /* Adiciona margem superior ao segundo botão */
+        }
+        
+        button:hover {/* Estilos quando o cursor paira sobre o botão */
+            background-color: #0056b3;
+            
+        }
+
+        #confirmation-message { /* Estilos para a mensagem de confirmação (inicialmente oculta) */
+            display: none;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        
+        .botao-voltar {/* Estilos para o botão de voltar */
+            position: fixed;/* Fixa o botão na posição */
+            top: 10px;
+            left: 10px;
+            background-color: #0074d9;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999; /* Controla a camada de sobreposição do botão */
+        }

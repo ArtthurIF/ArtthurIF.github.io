@@ -1,0 +1,62 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('faleconosco.jpg'); /* Define uma imagem de fundo */
+            background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+            background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+        }
+        
+        h2{
+           font-family: Garamond;
+           text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.clear {
+            background-color: #f44336;
+        }
+        p.message {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            background-color: #E8F5E9;
+            color: #4CAF50;
+            display: none;
+        }
+.botao-voltar {/* Estilos para o botão de voltar */
+            position: fixed;/* Fixa o botão na posição */
+            top: 10px; /* Define a distância superior de 10 pixels a partir do topo */
+            padding: 10px;  /* Define o preenchimento interno do botão */
+            border: none; /* Remove a borda do botão */
+            border-radius: 50%;/* Adiciona um arredondamento para tornar o botão circular */
+            cursor: pointer; /* Altera o cursor do mouse para o estilo "mão" quando passa sobre o botão */
+            z-index: 999; /* Controla a camada de sobreposição do botão (acima de outros elementos) */
+            color: white;  /* Define a cor do texto no botão como branco */
+        }
+
+.botao-voltar {/* Estilos adicionais para o botão de voltar */
+            left: 10px; /* Define a distância à esquerda de 10 pixels */
+            background-color: #0074d9;/* Define a cor de fundo do botão como azul (#0074d9) */
+        }
